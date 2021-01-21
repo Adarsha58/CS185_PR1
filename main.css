@@ -28,6 +28,7 @@ iframe {
     height: 20em;
     width: 25em;
     padding-right:13em; 
+    padding-bottom: 2em;
 }
 
 table, th, td {
