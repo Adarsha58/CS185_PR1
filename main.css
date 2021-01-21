@@ -1,0 +1,54 @@
+ul{
+    padding-left: 0.5em;
+}
+
+li {
+    display: inline;
+    padding-right: 1.7em;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+li a:hover {
+    color: rgb(0, 255, 115);
+}
+
+img {
+    width: 18em;
+    height: 14em;
+    padding-right: 20em;
+    padding-bottom: 4em;
+}
+
+iframe {
+    height: 20em;
+    width: 25em;
+    padding-right:13em; 
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+.Navbar {
+    background-color:#5f5f5f;
+    height:3em;
+    margin: auto;
+    padding: 0.25em;
+    padding-left: 0px;
+}
+
+.lcol {
+    width: 8em;
+}
+
+.TextArea, .ImageArea, .VideoArea, .TableArea {
+    padding-top: 1.6em;
+    padding-left: 1em;
+}
