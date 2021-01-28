@@ -7,7 +7,7 @@
         <div class = "MainPage">
             <div class = "NavBar">
                     <ul> 
-                        <li><a class = "TEXT" href = "./index.html">Text</a></li>
+                        <li><a class = "TEXT" href = "./index.html">Home</a></li>
                         <li><a class = "IMAGE" href = "./image.html">Image</a></li>
                         <li><a class = "VIDEO" href = "./video.html">Video</a></li>
                         <li><a class = "TABLE" href = "./table.html">Table</a></li>
@@ -15,14 +15,29 @@
             </div>
 
             <div class = "ImageArea"> 
-                    <img src = "./images/elephant.jpg">
-                    <img src = "./images/cat.jpg">
-                    <img src = "./images/duck.jpg">
-                    <img src = "./images/mario.jpg">
-                    <img src = "./images/sad.jpg">
-                    <img src = "./images/something.jpg">
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/elephant.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/cat.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/duck.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/mario.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/sad.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/something.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/sunset.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/trees.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/mountain.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/cloud.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/cat.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/duck.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/mario.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/sad.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/something.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/mario.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/sad.jpg"></div>
+                <div onclick="myClick(this, 'imgSrc')"><img src = "./images/something.jpg"></div>
             </div>
-
+        </div>
+        <div id = "modal" onclick="off(this)">
+            <img id="imgSrc" onclick="on(this)">
         </div>
     </body>
+    <script src = 'myscript.js'></script>
 </html>
