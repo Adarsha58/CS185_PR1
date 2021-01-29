@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>CS185 Assignment</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class = "EmailContainer">
+            <nav class = "NavBar">
+                <div class = "lists">
+                    <a class = "HOME" href = "./index.html">Home</a>
+                    <a class = "IMAGE" href = "./image.html">Image</a>
+                    <a class = "VIDEO" href = "./video.html">Video</a>
+                    <a class = "TABLE" href = "./table.html">Table</a>
+                    <a class = "EMAIL active-page" href = "./Email.html">Email</a>
+                </div>
+            </nav>
+
+            <div class = "EmailArea">
+        
+                    <label for="email">Enter your email:</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit" onclick="validate(this)"><br><br>
+                
+
+                  <div id="success">
+                    ✅ Email successfully recorded! 
+                  </div>
+
+                  <div id="failure">
+                    ❌ Invalid Email addrress ! 
+                  </div>
+            </div>
+        </div>
+    </body>
+    <script src = 'myscript.js'></script>
+</html>

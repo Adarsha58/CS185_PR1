@@ -5,15 +5,16 @@
     </head>
     <body>
         <div class = "MainPage">
-            <div class = "NavBar">
-                    <ul> 
-                        <li><a class = "TEXT" href = "./index.html">Home</a></li>
-                        <li><a class = "IMAGE" href = "./image.html">Image</a></li>
-                        <li><a class = "VIDEO" href = "./video.html">Video</a></li>
-                        <li><a class = "TABLE" href = "./table.html">Table</a></li>
-                    </ul>
-            </div>
-
+            <nav class = "NavBar">
+                <div class = "lists">
+                    <a class = "HOME" href = "./index.html">Home</a>
+                    <a class = "IMAGE active-page" href = "./image.html">Image</a>
+                    <a class = "VIDEO" href = "./video.html">Video</a>
+                    <a class = "TABLE" href = "./table.html">Table</a>
+                    <a class = "EMAIL" href = "./Email.html">Email</a>
+                </div>
+            </nav>
+            <button onclick="goTop(this)" id="myBtn" title="Go to top">Top</button>
             <div class = "ImageArea"> 
                 <div onclick="myClick(this, 'imgSrc')"><img src = "./images/elephant.jpg"></div>
                 <div onclick="myClick(this, 'imgSrc')"><img src = "./images/cat.jpg"></div>
