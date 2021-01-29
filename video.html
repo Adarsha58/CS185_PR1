@@ -5,21 +5,31 @@
     </head>
     <body>
         <div class = "MainPage">
-            <div class = "NavBar">
-                    <ul> 
-                        <li><a class = "TEXT" href = "./index.html">Text</a></li>
-                        <li><a class = "IMAGE" href = "./image.html">Image</a></li>
-                        <li><a class = "VIDEO" href = "./video.html">Video</a></li>
-                        <li><a class = "TABLE" href = "./table.html">Table</a></li>
-                    </ul>
-            </div>
-
+            <nav class = "NavBar">
+                <div class = "lists">
+                    <a class = "HOME" href = "./index.html">Home</a>
+                    <a class = "IMAGE" href = "./image.html">Image</a>
+                    <a class = "VIDEO active-page" href = "./video.html">Video</a>
+                    <a class = "TABLE" href = "./table.html">Table</a>
+                    <a class = "EMAIL" href = "./Email.html">Email</a>
+                </div>
+            </nav>
+            <button onclick="goTop(this)" id="myBtn" title="Go to top">Top</button>
             <div class = "VideoArea"> 
-                <iframe width="1237" height="696" src="https://www.youtube.com/embed/GhawZz6j3f8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="1237" height="696" src="https://www.youtube.com/embed/cRNypdYQoWk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="1237" height="696" src="https://www.youtube.com/embed/tW2KRBv_u1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe width="1237" height="696" src="https://www.youtube.com/embed/GhawZz6j3f8" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" width="1237" height="696" src="https://www.youtube.com/embed/cRNypdYQoWk" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" src="https://www.youtube.com/embed/tW2KRBv_u1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" src="https://www.youtube.com/embed/GhawZz6j3f8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" src="https://www.youtube.com/embed/cRNypdYQoWk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" src="https://www.youtube.com/embed/tW2KRBv_u1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>                
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" src="https://www.youtube.com/embed/GhawZz6j3f8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div onclick="myClick(this, 'videoSrc')"><div class="overlay"></div><iframe onclick="myClick(this, 'videoSrc')" src="https://www.youtube.com/embed/cRNypdYQoWk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
 
+            <div id = "modal" onclick="off(this)">
+                <iframe id="videoSrc" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <script src = 'myscript.js'></script>
         </div>
     </body>
 </html>
